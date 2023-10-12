@@ -30,7 +30,8 @@ def rps():
 
         computer = int(computerchoice)
 
-        print(f"\nYou chose {str(RPS(player)).replace('RPS.', '').title()}.")
+        print(
+            f"\nYou chose {str(RPS(player)).replace('RPS.', '').title()}.")
         print(
             f"\nPython chose {str(RPS(computer)).replace('RPS.', '').title()}.\n")
 
@@ -80,6 +81,7 @@ def rps():
     return play_rps
 
 
-play = rps()
+rock_paper_scissors = rps()
 
-play()
+if __name__ == 'main':
+    rock_paper_scissors()
